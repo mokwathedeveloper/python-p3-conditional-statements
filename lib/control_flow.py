@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 
 def admin_login(username, password):
-    # your code here
+    if (username.upper() == "ADMIN") and (password == "12345"):
+        return "Access granted"
+    else:
+        return "Access denied"
     pass
 
 def hows_the_weather(temperature):
