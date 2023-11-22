@@ -30,5 +30,18 @@ def fizzbuzz(number):
     pass
 
 def calculator(operation, num1, num2):
-    # your code here
+    if operation in ["+", "-", "*", "/"]:
+        if operation == "+":
+            return num1 + num2
+        elif operation == "-":
+            return num1 - num2
+        elif operation == "*":
+            return num1 * num2
+        elif operation == "/":
+            if num2 != 0:
+                return num1 / num2
+            else:
+                return "Cannot divide by zero!"
+    else:
+        return "Invalid operation!"
     pass
